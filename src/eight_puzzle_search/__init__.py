@@ -46,7 +46,7 @@ class Box:
     @property
     def value(self) -> List[int]:
         """
-        'Box'.value -> list[int]
+        'Box'.value -> List[int]
 
         九宫格对象的值 | value of Box object
         """
@@ -54,7 +54,7 @@ class Box:
 
     def set_value(self, value: List[int]) -> None:
         """
-        'Box'.set_value(value: list[int]) -> None
+        'Box'.set_value(value: List[int]) -> None
 
         修改当前九宫格对象的值而不改变其历史记录 | change value of Box object without change history
         >> value: 新的值 | new value
@@ -119,7 +119,7 @@ class Box:
         'Box'.copy() -> 'Box'
 
         复制当前的九宫格对象 | copy Box object
-        << 返回复制的九宫格对象 | return copied Box object
+        << 返回复制后的九宫格对象拷贝 | return copied Box object
         """
         return Box(self._value.copy(), self._history)
 
@@ -236,8 +236,7 @@ class Box:
         """
         'Box'.able -> Set[str]
 
-        查询可用的移动方向 | query available move direction
-        << 返回可用的移动方向 | return usable move direction
+        查询并返回可用的移动方向 | query and return available move direction
         """
         able = set()
         if self._zero not in (6, 7, 8):
@@ -536,7 +535,7 @@ def manhattan_distance(task: dict) -> int:
     << 评估得出的搜索代价 | evaluation result of search cost
     """
     s = 0
-    for i in range(9):
+    for i in range(1, 9):
         now, goal = task['now'].index(i), task['end'].index(i)
         s += abs(now // 3 - goal // 3) + abs(now % 3 - goal % 3)
     return s
@@ -553,7 +552,7 @@ def run_time(func: Callable) -> Callable:
     def wrapper(*args, **kwargs):
         start = process_time()
         result = func(*args, **kwargs)
-        print('运行时间 | run time: {:.7f}s'.format(process_time() - start))
+        print('运行时间 | run time: {:.7f}s\n'.format(process_time() - start))
         return result
 
     return wrapper
