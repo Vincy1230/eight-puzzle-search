@@ -4,11 +4,11 @@ Language: [English](https://github.com/VincentSHI1230/eight-puzzle-search/blob/m
 
 ---
 
-> 创建日期：2022-10-16
-> 更新日期：2022-10-24
-> 作者：Vincent SHI | 史文朔
-> blog：https://blog.vincent1230.top/
-> GitHub：[VincentSHI1230/eight-puzzle-search: 一款用于辅助学习八数码问题搜索求解的 Python 包 (github.com)](https://github.com/VincentSHI1230/eight-puzzle-search)
+> 创建日期：2022-10-16  
+> 更新日期：2022-10-24  
+> 作者：Vincent SHI | 史文朔  
+> blog：https://blog.vincent1230.top/  
+> GitHub：[VincentSHI1230/eight-puzzle-search: 一款用于辅助学习八数码问题搜索求解的 Python 包 (github.com)](https://github.com/VincentSHI1230/eight-puzzle-search)  
 > Gitee：[eight-puzzle-search: 一款用于辅助学习八数码问题搜索求解的 Python 包 (gitee.com)](https://gitee.com/Vincent1230/eight-puzzle-search)
 
 一款用于辅助学习八数码问题搜索求解的 Python 包
