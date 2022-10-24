@@ -1,6 +1,6 @@
 [project]
 name = "eight_puzzle_search"
-version = "0.0.2"
+version = "0.0.6"
 authors = [
   { name="Vincent SHI | 史文朔", email="516879257@qq.com" },
 ]
