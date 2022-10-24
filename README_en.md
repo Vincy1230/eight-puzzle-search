@@ -17,3 +17,7 @@ pip install --upgrade eight-puzzle-search
 ```python
 import eight_puzzle_search as eps
 ```
+
+## More
+
+My English is not good so I am so tired to write the README file in English. I will do it later.

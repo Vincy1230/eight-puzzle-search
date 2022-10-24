@@ -15,7 +15,7 @@ from typing import *
 
 class Box:
     """
-    Box(value: list, history: str = '-> ') -> 'Box'
+    Box(value: List[int], history: str = '') -> 'Box'
 
     八数码问题处理的九宫格对象 | Box object for 8-puzzle problem
     >> value: 九宫格对象的值 | value of Box object
@@ -269,13 +269,13 @@ class Box:
         return new
 
 
-def input_box(prompt: str = False) -> 'Box':
+def input_box(prompt: str = '') -> 'Box':
     """
-    input_box(prompt: str = False) -> 'Box'
+    input_box(prompt: str = '') -> 'Box'
 
     交互式输入九宫格对象 | interactive input Box object
     >> prompt: 提示信息 | prompt message
-    << 返回新的九宫格对象 | return new Box object
+    << 返回新建的九宫格对象 | return new Box object
     """
     _WDICT = {'0': 0, ' ': 0, '': 0, '*': 0, '9': 0, '1': 1,
               '2': 2, '3': 3, '4': 4, '5': 5, '6': 6, '7': 7, '8': 8}
@@ -287,8 +287,8 @@ def input_box(prompt: str = False) -> 'Box':
             raise ValueError('无法识别你的输入 | cannot recognize your input')
 
     value = []
-    print(prompt if prompt else '请按提示直接输入数值. 若以空格分隔, 则 0 或 * 可代表空位\nenter the value directly as '
-                                'prompted.\nWhen separated by a space, 0 or * can be used to represent blank')
+    print(prompt if prompt else '请按提示直接输入数值. 0 或 * 可代表空位. \n'
+                                'enter the value directly as prompted. \n0 or * can be used to represent blank.')
     for i in range(1, 4):
         line = input('第 {} 行 | row {}: '.format(i, i))
         if ',' in line:
@@ -392,7 +392,7 @@ def depth_first_search(start: 'Box', end: 'Box') -> None:
     >> start: 起始九宫格对象 | start Box object
     >> end: 目标九宫格对象 | end Box object
     """
-    # 警告: 典型的深度优先搜索是不完备的搜索算法, 在八数码问题中具有严重缺陷, 本函数仅供展示，不可用于求解.
+    # 警告: 典型的深度优先搜索是不完备的搜索算法, 在八数码问题中具有严重缺陷, 本函数仅供展示, 不可用于求解.
     # Warning: The typical depth-first search is an incomplete search algorithm, which has serious defects here.
     # This function is only for demonstration and cannot be used for search.
     warnings.warn('深度优先搜索是不完备的搜索算法, 在八数码问题中具有严重缺陷, 本函数仅供展示，不可用于求解.\n'
