@@ -1,0 +1,19 @@
+[project]
+name = "eight_puzzle_search"
+version = "0.0.1"
+authors = [
+  { name="Vincent SHI | 史文朔", email="516879257@qq.com" },
+]
+description = "一款用于辅助学习八数码问题搜索求解的 Python 包 | A Python package for learning search algorithms of eight puzzle problem"
+readme = "README.md"
+requires-python = ">=3.7"
+keywords = ["eight puzzle", "search", "八数码", "搜索", "文朔"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/pypa/sampleproject"
+"Bug Tracker" = "https://github.com/pypa/sampleproject/issues"
