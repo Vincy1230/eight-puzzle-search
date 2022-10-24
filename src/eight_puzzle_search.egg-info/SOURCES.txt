@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/eight_puzzle_search/__init__.py
+src/eight_puzzle_search.egg-info/PKG-INFO
+src/eight_puzzle_search.egg-info/SOURCES.txt
+src/eight_puzzle_search.egg-info/dependency_links.txt
+src/eight_puzzle_search.egg-info/top_level.txt

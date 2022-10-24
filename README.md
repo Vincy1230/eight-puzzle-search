@@ -1,6 +1,6 @@
 # 八数码问题练习包
 
-Language: [English](../README_en.md) | 简体中文(Simplified Chinese)
+Language: [English](https://github.com/VincentSHI1230/eight-puzzle-search/blob/main/README_en.md) | 简体中文 (Simplified Chinese)
 
 ---
 
@@ -9,7 +9,7 @@ Language: [English](../README_en.md) | 简体中文(Simplified Chinese)
 ## 安装
 
 ```bash
-pip install eight-puzzle-search
+pip install --upgrade eight-puzzle-search
 ```
 
 ## 引入

@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: eight-puzzle-search
+Version: 0.0.70
+Summary: 一款用于辅助学习八数码问题搜索求解的 Python 包 | A Python package for learning search algorithms of eight puzzle problem
+Author-email: Vincent SHI | 史文朔 <516879257@qq.com>
+Project-URL: Homepage, https://github.com/VincentSHI1230/eight-puzzle-search
+Project-URL: Bug Tracker, https://github.com/VincentSHI1230/eight-puzzle-search/issues
+Keywords: eight puzzle,search,八数码,搜索,文朔
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# 八数码问题练习包
+
+Language: [English](https://github.com/VincentSHI1230/eight-puzzle-search/blob/main/README_en.md) | 简体中文 (Simplified Chinese)
+
+---
+
+一款用于辅助学习八数码问题搜索求解的 Python 包
+
+## 安装
+
+```bash
+pip install --upgrade eight-puzzle-search
+```
+
+## 引入
+
+```python
+import eight_puzzle_search as eps
+```
